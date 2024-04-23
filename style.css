@@ -1,0 +1,36 @@
+
+.container {
+    display: flex;
+
+}
+
+.left {
+    position: relative;
+    width:40%;
+}
+.background-image {
+    position:absolute;
+    width:100%;
+    z-index:-1;
+/*     
+    height:auto; */
+
+    /* max-width:50%; */
+}
+
+.logo {
+    height:100px;
+    width:100px;
+}
+
+.pic-text {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: roboto;
+}
