@@ -115,6 +115,8 @@ p {
 input  {
     border-radius: 3px;
     font-size:14px;
+    height: 20px;
+    /* border: 1px solid #D6D9DC; */
 }
 /* Styling for validations*/
 
@@ -132,4 +134,7 @@ input:optional {
 }
 input:valid{
     border-color:black;
+}
+input:focus{
+    box-shadow: 3px 3px 5px lightblue;
 }
