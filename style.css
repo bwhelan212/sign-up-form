@@ -104,12 +104,7 @@ label {
     display:inline-block;
     
 }
-/* figure out how to add gap between the elements in each row of the form (first name + last name) .form-section +  */
-/* .form-section {
-    display:flex;
-    flex-direction:column;
 
-} */
 label, input {
     display:block;
 }
@@ -119,6 +114,7 @@ p {
 
 input  {
     border-radius: 3px;
+    font-size:14px;
 }
 /* Styling for validations*/
 
