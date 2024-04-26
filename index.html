@@ -10,8 +10,8 @@
         <div class="left">
             <img class="background-image" src="./images/pic.jpg" alt="city">
             <div class="pic-text">
-                <!-- <img src="./images/pika2.png" alt="pikachu" class="logo"> -->
-                test
+                <img src="./images/pika2.png" alt="pikachu" class="logo">
+                PikaSignup
             </div>
         </div>
 
@@ -23,32 +23,42 @@
 
             <form action="/my-handling-form-page" method="post">
                 <h2>Sign up here!</h2>
-                <ul>
-                    <li>
-                        <label for="first-name">First Name: </label>
-                        <input type="text" id="first-name" name="first-name" />
-                    </li>
-                    <li>
-                        <label for="last-name">Last Name: </label>
-                        <input type="text" name="last-name" id="last-name"/>
-                    </li>
-                    <li>
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" required/> 
-                    </li>
-                    <li>
-                        <label for="phone">Phone: </label>
-                        <input type="number" name="phone" id="phone">
-                    </li>
-                    <li>
-                        <label for="password">Password: </label>
-                        <input type="password" name="password" id="password">
-                    </li>
-                    <li>
-                        <label for="confirm-password">Con Password: </label>
-                        <input type="password" name="confirm-password" id="confirm-password">
-                    </li>
-                </ul>
+                <div class="form-section">
+                    <p>
+                        <label for="first-name">*First Name </label>
+                        <input type="text" id="first-name" name="first-name" required/>
+                    </p>
+    
+                    <p>
+                        <label for="last-name">*Last Name </label>
+                        <input type="text" name="last-name" id="last-name" required/>
+                    </p>
+                </div>
+                
+                <div class="form-section">
+                    <p>
+                        <label for="email">*Email </label>
+                        <input type="email" name="email" id="email" required/>
+                    </p>
+    
+                    <p>
+                        <label for="phone">Phone number </label>
+                        <input type="number" name="phone" id="phone" minlnegth = "10" maxlength="11" >
+                    </p>
+                </div>
+               
+                <div class="form-section">
+                    <p>
+                        <label for="password">*Password: </label>
+                        <input type="password" name="password" id="password" required>
+                    </p>
+    
+                    <p>
+                        <label for="confirm-password">*Confirm Password: </label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </p>
+                </div>
+              
             </form>
             
             <button type="submit">Create Account</button>

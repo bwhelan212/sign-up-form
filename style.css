@@ -8,49 +8,26 @@ html,body,.container {
     display: flex;
 
 }
-
-ul {
+p {
+    margin:0px;
+    margin-bottom: 10px;
+}
+/* ul {
     list-style-type:none;
     padding:0px;
     margin:0px;
-    /* display:inline-block; */
+    //display:inline-block; 
 }
 
 form ul li{
     display:inline-block;
-}
+} */
 
-form {
-    /* display:inline-block; */
-    margin: 0;
-    /* width:600px; */
-    padding: 1em;
-    border:1px solid red;
-    border-radius: 1em;
-    background-color: azure;
-
-}
-label {
-    /* Uniform size & alignment */
-    text-align:left;
-    display: inline-block;
-    min-width: 90px;
-    text-align: right;
-  }
-
-form li + li {
-    margin-top: 1em;
-}
-
-
-.first-message{
-    text-align:center;
-
-}
 
 .left {
     position: relative;
-    width:80%;
+    width:40%;
+    /* margin-right:1em; */
 }
 .background-image {
     position:absolute;
@@ -58,6 +35,12 @@ form li + li {
     width:100%;
     z-index:-1;
 }
+
+
+
+/* form li + li {
+    margin-top: 1em;
+} */
 
 .logo {
     height:100px;
@@ -83,5 +66,74 @@ form li + li {
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    background-color:rgb(236, 227, 227);
+    background-color:#ffeac2;
+    font-family:Arial;
+ 
+}
+.first-message{
+    text-align:center;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    /* margin: 1em;; */
+    /* width:600px; */
+    /* padding: 1em; */
+    /* border:1px solid red; */
+    /* border-radius: 1em; */
+    background-color:#e4ebcf;
+    width:100%;
+    box-shadow: 0px -25px 20px -30px rgba(0,0,0,0.45),
+    0px 25px 20px -30px rgba(0,0,0,0.45);
+    gap:0px;
+    
+
+}
+
+label {
+    
+    text-align:left;
+    display: inline-block;
+    min-width: 90px;
+    
+  }
+.form-section p{
+    display:inline-block;
+    
+}
+/* figure out how to add gap between the elements in each row of the form (first name + last name) .form-section +  */
+/* .form-section {
+    display:flex;
+    flex-direction:column;
+
+} */
+label, input {
+    display:block;
+}
+p {
+    padding-right:20px;
+}
+
+input  {
+    border-radius: 3px;
+}
+/* Styling for validations*/
+
+
+input:invalid{
+    border-color:red;
+}
+
+input:required {
+    border:1px solid black;
+}
+
+input:optional {
+    border:1px solid silver;
+}
+input:valid{
+    border-color:black;
 }
